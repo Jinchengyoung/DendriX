@@ -1,4 +1,4 @@
-#Dendrix
+
 
 DendriX is an open-source, high-performance scientific software platform for simulating two-dimensional and three-dimensional dendritic growth governed by strongly coupled nonlinear multiphysics equations. The software is designed with scalability, extensibility, and maintainability in mind and is particularly suited for large-scale phase-field simulations requiring adaptive resolution and parallel computing.
 
