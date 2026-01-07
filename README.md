@@ -1,112 +1,56 @@
-\# DendriX
-
-
-
-\*\*DendriX\*\* is an open-source, high-performance scientific software platform for
-
-large-scale \*\*two-dimensional (2D) and three-dimensional (3D) phase-field
-
-simulations\*\* governed by strongly coupled nonlinear multiphysics equations.
-
-The software is designed with \*\*scalability, extensibility, and maintainability\*\*
-
-in mind and is particularly suited for simulations requiring \*\*adaptive mesh
-
-refinement\*\* and \*\*parallel computing\*\*.
-
-
-
-DendriX is released under a \*\*copyleft license (GPL-3.0)\*\* to ensure that
-
-derivative works and future extensions remain openly available to the community.
-
-
-
----
-
-
-
-\## Key Features
-
-
-
-\- \*\*Phase-field modeling\*\* for interfacial and microstructural evolution
-
-\- \*\*Block-structured adaptive mesh refinement (AMR)\*\* for efficient multiscale resolution
-
-\- \*\*Finite volume discretization\*\* with fully implicit time integration
-
-\- \*\*Hybrid MPI–OpenMP parallelization\*\* for scalable 2D and 3D simulations
-
-\- Modular, input-driven software architecture
-
-\- Support for multiple numerical solution strategies
-
-\- Output compatible with common visualization tools (e.g., ParaView, VisIt)
-
-
-
----
-
-
-
-\## Software Architecture
-
-
-
-DendriX follows a modular software design that separates:
-
-
-
-\- Core data structures and AMR mesh management  
-
-\- Numerical solvers for phase-field, species transport, and charge conservation  
-
-\- Parallel execution layers (MPI for distributed memory, OpenMP for shared memory)
-
-
-
-This architecture enables straightforward extension to additional physics
-
-modules (e.g., mechanics, thermal transport) or multiscale coupling with
-
-system-level models.
-
-
-
----
-
-
-
-\## Installation
-
-
-
-\### Prerequisites
-
-
-
-\- Linux-based operating system (recommended for HPC usage)
-
-\- GNU Fortran or Intel Fortran compiler
-
-\- MPI library (e.g., OpenMPI or MPICH)
-
-\- OpenMP-enabled compiler
-
-
-
-\### Build Instructions
-
-
-
-Clone the repository:
-
-
-
-```bash
-
-git clone https://github.com/Jinchengyoung/DendriX.git
-
+#Dendrix
+
+DendriX is an open-source, high-performance scientific software platform for simulating two-dimensional and three-dimensional dendritic growth governed by strongly coupled nonlinear multiphysics equations. The software is designed with scalability, extensibility, and maintainability in mind and is particularly suited for large-scale phase-field simulations requiring adaptive resolution and parallel computing.
+
+DendriX is released under a copyleft license (GPL-3.0) to ensure that derivative works and improvements remain openly available to the community.
+
+**Key Features:**
+- Block-structured adaptive mesh refinement (AMR) for efficient multiscale resolution
+- Finite volume discretization with fully implicit time integration
+- Hybrid MPI–OpenMP parallelization for scalable 2D and 3D simulations
+- Modular, input-driven software architecture
+- Support for multiple numerical solution strategies
+- Compatible with common visualization tools (e.g., ParaView, VisIt)
+
+**Software Architecture:**
+DendriX is built on a modular design that separates core data structures, numerical solvers, and physics modules. The software integrates:
+AMR-based mesh management
+- Phase-field, species transport, and charge conservation solvers
+- Parallel execution via MPI and shared-memory acceleration via OpenMP
+This design enables straightforward extension to additional physics or multiscale coupling.
+
+**Installation:**
+**Prerequisites**
+- Linux-based operating system (recommended)
+- GNU Fortran or Intel Fortran compiler
+- MPI library (e.g., OpenMPI or MPICH)
+- OpenMP-enabled compile
+
+**Build Instructions:**
+git clone https://github.com/<username>/DendriX.git
 cd DendriX
+make
 
+**To enable MPI:**
+make OMP=true
+
+**Usage:**
+DendriX is configured entirely through input files.
+- Select 2D or 3D simulations via input parameters
+- Choose between serial or parallel execution
+- Control AMR behavior, numerical schemes, and output options
+**Example (MPI execution):**
+  mpirun -np 8 ./dendrix input_3d
+Output files can be visualized using ParaView or VisIt.
+
+**Validation and Performance:**
+DendriX has been validated against representative experimental data and benchmarked against commercial multiphysics software. Results demonstrate improved computational efficiency, particularly for three-dimensional simulations using adaptive mesh refinement and parallel execution.
+
+Details are provided in the accompanying SoftwareX publication.
+
+**Reuse and Extension:**
+DendriX is designed as a general-purpose phase-field and multiphysics simulation framework. Users may:
+- Implement new phase-field models
+- Couple additional physics (e.g., mechanics, thermal transport)
+- Integrate system-level or multiscale models
+The GPL-3.0 license ensures that extensions remain open and benefit the broader community.
