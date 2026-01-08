@@ -70,6 +70,36 @@ mpirun -n 4 ./main.Linux.gfortran.mpi.exe Inputs_3d
 
 ---
 
+## Example Visualization Results
+
+Below are representative visualization outputs generated using **VisIt** and **ParaView**.
+Place the image files at the indicated paths (or update the paths if you prefer a
+different directory layout).
+
+### Figure 3. Visualization generated using VisIt
+![Figure 3: 2D/3D phase-field visualization generated using VisIt](docs/figures/figure3_visit.png)
+
+*Figure 3.* Representative phase-field visualization produced using **VisIt**
+(2D pseudocolor or 3D contour rendering of the phase field).
+
+### Figure 4. Visualization generated using ParaView
+![Figure 4: 2D/3D phase-field visualization generated using ParaView](docs/figures/figure4_paraview.png)
+
+*Figure 4.* Representative phase-field visualization produced using **ParaView**
+using the AMReX/BoxLib Grid Reader and contour filtering.
+
+---
+
+## Software Capabilities
+
+- Simulation of **2D and 3D Li-ion dendrite growth**
+- Single-dendrite and multi-dendrite configurations
+- **Adaptive mesh refinement (AMR)**
+- Multiple numerical solution strategies
+- Serial and **MPI/OpenMP parallel execution**
+- Visualization using **VisIt** and **ParaView**
+
+---
 ## Software Capabilities
 
 - Simulation of **2D and 3D Li-ion dendrite growth**
