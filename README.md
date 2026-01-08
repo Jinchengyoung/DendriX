@@ -27,9 +27,9 @@ This design enables straightforward extension to additional physics or multiscal
 - OpenMP-enabled compile
 
 **Build Instructions:**
-git clone https://github.com/<username>/DendriX.git
-cd DendriX
-make
+- git clone https://github.com/<username>/DendriX.git
+- cd DendriX
+- make
 
 **To enable MPI:**
 make OMP=true
