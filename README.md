@@ -15,7 +15,7 @@ The software is released under the **GNU General Public License v3.0 (GPL-3.0)**
 
 ---
 
-## Quick Start (for Reviewers)
+## Quick Start
 
 This section provides the minimum steps required to **build, run, and visualize**
 a DendriX simulation.
