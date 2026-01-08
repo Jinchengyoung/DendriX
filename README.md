@@ -73,8 +73,6 @@ mpirun -n 4 ./main.Linux.gfortran.mpi.exe Inputs_3d
 ## Example Visualization Results
 
 Below are representative visualization outputs generated using **VisIt** and **ParaView**.
-Place the image files at the indicated paths (or update the paths if you prefer a
-different directory layout).
 
 ### Figure 3. Visualization generated using VisIt
 ![Figure 3: 2D/3D phase-field visualization generated using VisIt](docs/figures/figure3_visit.png)
