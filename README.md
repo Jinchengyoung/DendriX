@@ -127,7 +127,7 @@ See the `LICENSE` file for details.
 
 If you use DendriX in your research, please cite:
 
-> J. Young et al., *DendriX: A Flexible, Maintainable, and Extendable Platform to
+> wh. Yang et al., *DendriX: A Flexible, Maintainable, and Extendable Platform to
 > Simulate 3D Li-Dendrite Growth*, SoftwareX, 2026.
 
 ---
