@@ -73,3 +73,4 @@ a DendriX simulation.
 ```bash
 cd PhaseField/Works/Dendrite_PFcode
 make
+make MPI=t
