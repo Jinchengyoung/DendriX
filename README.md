@@ -75,16 +75,11 @@ mpirun -n 4 ./main.Linux.gfortran.mpi.exe Inputs_3d
 Below are representative visualization outputs generated using **VisIt** and **ParaView**.
 
 ### Figure 3. Visualization generated using VisIt
-![Figure 3: 2D/3D phase-field visualization generated using VisIt](docs/figures/figure3_visit.png)
-
-*Figure 3.* Representative phase-field visualization produced using **VisIt**
-(2D pseudocolor or 3D contour rendering of the phase field).
+![Figure 3: VisIt visulization](docs/figures/figure3_visit.png)
 
 ### Figure 4. Visualization generated using ParaView
-![Figure 4: 2D/3D phase-field visualization generated using ParaView](docs/figures/figure4_paraview.png)
+![Figure 4: ParaView visualizatio](docs/figures/figure4_paraview.png)
 
-*Figure 4.* Representative phase-field visualization produced using **ParaView**
-using the AMReX/BoxLib Grid Reader and contour filtering.
 
 ---
 
