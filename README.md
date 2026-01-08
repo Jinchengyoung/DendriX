@@ -123,6 +123,8 @@ See the `LICENSE` file for details.
 
 ---
 
+**DOI:** https://doi.org/10.5281/zenodo.18181222
+
 ## Citation
 
 If you use DendriX in your research, please cite:
