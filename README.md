@@ -54,3 +54,22 @@ DendriX is designed as a general-purpose phase-field and multiphysics simulation
 - Couple additional physics (e.g., mechanics, thermal transport)
 - Integrate system-level or multiscale models
 The GPL-3.0 license ensures that extensions remain open and benefit the broader community.
+
+## Quick Start (for Reviewers)
+
+This section provides the minimum steps required to **build, run, and visualize**
+a DendriX simulation.
+
+### Prerequisites
+- Linux-based system
+- GNU Fortran or Intel Fortran compiler
+- MPI library (optional, for parallel runs)
+- VisIt or ParaView for visualization
+
+---
+
+### Build
+
+```bash
+cd PhaseField/Works/Dendrite_PFcode
+make
