@@ -14,13 +14,16 @@ strength in scalable 3D simulations.
 The software is released under the **GNU General Public License v3.0 (GPL-3.0)**.
 
 ---
-The code has been compiled and tested in clean environments listed below:
+## Tested Build Environments
 
-| Operating System | Compiler | Result |
-|------------------|--------|------|
-| Ubuntu 20.04 | gfortran 9.4 | success |
-| Ubuntu 22.04 | gfortran 11.4 | success |
-| Ubuntu 22.04 | Intel oneAPI (ifort) | success |
+| Operating System | Compiler | MPI | Result |
+|------------------|--------|----|------|
+| Ubuntu 20.04 | gfortran 9.4 | OpenMPI | success |
+| Ubuntu 22.04 | gfortran 11.4 | OpenMPI | success |
+| Linux HPC (UMich ARC-TS) | GCC 8.2 | OpenMPI 3.1.6 | success |
+| Linux HPC (UMich ARC-TS) | Intel 2022 | Intel MPI 2021 | success |
+| Linux (local build) | gfortran | MPICH | success |
+DendriX is compatible with multiple MPI implementations (OpenMPI, Intel MPI, and MPICH) and supports both GNU and Intel compiler toolchains on workstation and HPC systems.
 
 ## Quick Start
 
