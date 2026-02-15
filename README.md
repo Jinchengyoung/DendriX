@@ -117,7 +117,7 @@ See the `LICENSE` file for details.
 This project incorporates portions of the BoxLib adaptive mesh refinement (AMR) framework developed by Lawrence Berkeley National Laboratory (LBNL).
 
 BoxLib is redistributed under the BSD-3-Clause license.  
-The original license text is provided in `LICENSE_BoxLib`.
+The original license text is provided in `LICENSE`.
 
 Only infrastructure components (mesh management, parallel communication, and AMR utilities) originate from BoxLib.  
 All electrochemical phase-field models, solvers, and application modules are original developments of the DendriX project and are released under GPL-3.0.
