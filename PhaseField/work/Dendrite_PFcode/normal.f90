@@ -231,7 +231,7 @@ function i8_normal_ab ( a, b, seed )
   real ( kind = 8 ) r1
   real ( kind = 8 ) r2
   real ( kind = 8 ) r8_uniform_01
-  integer ( kind = 8 ) seed
+  integer ( kind = 4 ) seed !changed kind = 8 to kind = 4 JC
   real ( kind = 8 ) x
 
   r1 = r8_uniform_01 ( seed )
