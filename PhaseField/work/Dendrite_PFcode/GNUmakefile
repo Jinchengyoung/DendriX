@@ -24,3 +24,7 @@ main.$(suf).exe: $(objects)
 	$(LINK.f90) -o main.$(suf).exe $(objects) $(libraries)
 
 include $(BOXLIB_HOME)/Tools/F_mk/GMakerules.mak
+
+# Force the compiler to allow MPI argument mismatches (required for gfortran 10+)
+F90FLAGS += -fallow-argument-mismatch
+FFLAGS   += -fallow-argument-mismatch
