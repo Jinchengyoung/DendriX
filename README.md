@@ -93,16 +93,6 @@ Below are representative visualization outputs generated using **VisIt** and **P
 - Visualization using **VisIt** and **ParaView**
 
 ---
-## Software Capabilities
-
-- Simulation of **2D and 3D Li-ion dendrite growth**
-- Single-dendrite and multi-dendrite configurations
-- **Adaptive mesh refinement (AMR)**
-- Multiple numerical solution strategies
-- Serial and **MPI/OpenMP parallel execution**
-- Visualization using **VisIt** and **ParaView**
-
----
 
 ## Directory Structure
 
@@ -120,6 +110,17 @@ PhaseField/
 
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
 See the `LICENSE` file for details.
+
+---
+## Third-Party Software
+
+This project incorporates portions of the BoxLib adaptive mesh refinement (AMR) framework developed by Lawrence Berkeley National Laboratory (LBNL).
+
+BoxLib is redistributed under the BSD-3-Clause license.  
+The original license text is provided in `LICENSE_BoxLib`.
+
+Only infrastructure components (mesh management, parallel communication, and AMR utilities) originate from BoxLib.  
+All electrochemical phase-field models, solvers, and application modules are original developments of the DendriX project and are released under GPL-3.0.
 
 ---
 
