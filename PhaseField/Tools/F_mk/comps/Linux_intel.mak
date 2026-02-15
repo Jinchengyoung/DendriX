@@ -1,16 +1,4 @@
-    _ifc_version := $(shell ifort -V 2>&1 | grep 'Version')
-    ifeq ($(findstring Version 16, $(_ifc_version)), Version 16)
-        _comp := Intel16
-    else ifeq ($(findstring Version 15, $(_ifc_version)), Version 15)
-        _comp := Intel15
-    else ifeq ($(findstring Version 14, $(_ifc_version)), Version 14)
-        _comp := Intel14
-    else ifeq ($(findstring Version 13, $(_ifc_version)), Version 13)
-        _comp := Intel13
-    else
-      $(error "$(_ifc_version) of IFC is not supported")
-    endif
-
+    _comp := Intel18
     F90 := ifort
     FC  := ifort
     CC  := icc
