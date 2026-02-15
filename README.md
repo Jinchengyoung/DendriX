@@ -14,6 +14,13 @@ strength in scalable 3D simulations.
 The software is released under the **GNU General Public License v3.0 (GPL-3.0)**.
 
 ---
+The code has been compiled and tested in clean environments listed below:
+
+| Operating System | Compiler | Result |
+|------------------|--------|------|
+| Ubuntu 20.04 | gfortran 9.4 | success |
+| Ubuntu 22.04 | gfortran 11.4 | success |
+| Ubuntu 22.04 | Intel oneAPI (ifort) | success |
 
 ## Quick Start
 
