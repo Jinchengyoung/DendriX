@@ -42,12 +42,14 @@ ifeq ($(HOSTNAME),gl-login3.arc-ts.umich.edu)
 endif
 
 #JC for Gfortran mpich
-MPIHOME=/home/wenhua/mpich-install
-mpi_include_dir =$(MPIHOME)/include
-mpi_lib_dir = $(MPIHOME)/lib
-mpi_libraries += -lmpich
+ifeq ($(HOSTNAME),gl-login2.arc-ts.umich.edu)
+  MPIHOME=/home/wenhua/mpich-install
+  mpi_include_dir =$(MPIHOME)/include
+  mpi_lib_dir = $(MPIHOME)/lib
+  mpi_libraries += -lmpich
 
-FC = $(MPIHOME)/bin/mpifort
-F90 = $(MPIHOME)/bin/mpifort
-CC = $(MPIHOME)/bin/mpicc
-CXX = $(MPIHOME)/bin/mpicxx
+  FC = $(MPIHOME)/bin/mpifort
+  F90 = $(MPIHOME)/bin/mpifort
+  CC = $(MPIHOME)/bin/mpicc
+  CXX = $(MPIHOME)/bin/mpicxx
+endif
