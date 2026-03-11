@@ -114,7 +114,7 @@ Note: The governing equations, source terms, and driving mechanisms differ funda
 
 ### Figure 4. Mesh convergence study as compared with COMSOL
 <p align="center">
-   <img src="docs/figures/ConvergenceStudy.png" width="560">
+   <img src="docs/figures/ConvergenceStudy.png" width="660">
 </p>
 
 ---
