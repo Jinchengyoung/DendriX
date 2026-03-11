@@ -99,8 +99,9 @@ Below are representative visualization outputs generated using **VisIt** and **P
 Note: The governing equations, source terms, and driving mechanisms differ fundamentally.
 
 ### Figure 3. Exploratory simulations to compare qualitative morphological features under similar anisotropic interface conditions
-<img src="docs/figures/Figure_1.jpg" width="600">
-
+<p align="center">
+   <img src="docs/figures/Figure_1.jpg" width="600">
+</p>
 
 ---
 
