@@ -109,7 +109,7 @@ Note: The governing equations, source terms, and driving mechanisms differ funda
 ## Mesh convergence study
 
 ### Figure 4. Mesh convergence study as compared with COMSOL
-![Figure 4: Bench mark with PFHub](docs/figures/ConvergenceStudy.jpg)
+![Figure 4: Bench mark with PFHub](docs/figures/ConvergenceStudy.png)
 
 
 ---
