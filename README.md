@@ -84,10 +84,10 @@ mpirun -n 4 ./main.Linux.gfortran.mpi.exe Inputs_3d seed_def
 
 Below are representative visualization outputs generated using **VisIt** and **ParaView**.
 
-### Figure 3. Visualization generated using VisIt
+### Figure 1. Visualization generated using VisIt
 ![Figure 3: VisIt visulization](docs/figures/figure3_visit.png)
 
-### Figure 4. Visualization generated using ParaView
+### Figure 2. Visualization generated using ParaView
 ![Figure 4: ParaView visualizatio](docs/figures/figure4_paraview.png)
 
 
@@ -98,7 +98,7 @@ Below are representative visualization outputs generated using **VisIt** and **P
 
 Note: The governing equations, source terms, and driving mechanisms differ fundamentally.
 
-### Figure 1. Exploratory simulations to compare qualitative morphological features under similar anisotropic interface conditions
+### Figure 3. Exploratory simulations to compare qualitative morphological features under similar anisotropic interface conditions
 ![Figure 1: Bench mark with PFHub](docs/figures/Figure_1.jpg)
 
 
