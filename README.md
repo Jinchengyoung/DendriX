@@ -91,7 +91,7 @@ Below are representative visualization outputs generated using **VisIt** and **P
 
 ### Figure 2. Visualization generated using ParaView
 <p align="center">
-   <img src="figure4_paraview.png" width="600">
+   <img src="docs/figures/figure4_paraview.png" width="600">
 </p>
 
 ---
@@ -103,7 +103,7 @@ Note: The governing equations, source terms, and driving mechanisms differ funda
 
 ### Figure 3. Exploratory simulations to compare qualitative morphological features under similar anisotropic interface conditions
 <p align="center">
-   <img src="docs/figures/Figure_1.jpg" width="600">
+   <img src="docs/figures/Figure_1.jpg" width="300">
 </p>
 
 ---
@@ -113,8 +113,9 @@ Note: The governing equations, source terms, and driving mechanisms differ funda
 ## Mesh convergence study
 
 ### Figure 4. Mesh convergence study as compared with COMSOL
-![Figure 4: Bench mark with PFHub](docs/figures/ConvergenceStudy.png)
-
+<p align="center">
+   <img src="docs/figures/ConvergenceStudy.png" width="300">
+</p>
 
 ---
 
