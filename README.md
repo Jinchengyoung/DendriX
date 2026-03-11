@@ -85,11 +85,14 @@ mpirun -n 4 ./main.Linux.gfortran.mpi.exe Inputs_3d seed_def
 Below are representative visualization outputs generated using **VisIt** and **ParaView**.
 
 ### Figure 1. Visualization generated using VisIt
-![Figure 3: VisIt visulization](docs/figures/figure3_visit.png)
+<p align="center">
+   <img src="docs/figures/figure3_visit.png" width="600">
+</p>
 
 ### Figure 2. Visualization generated using ParaView
-![Figure 4: ParaView visualizatio](docs/figures/figure4_paraview.png)
-
+<p align="center">
+   <img src="figure4_paraview.png" width="600">
+</p>
 
 ---
 
