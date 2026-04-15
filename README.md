@@ -20,8 +20,8 @@ The software is released under the **GNU General Public License v3.0 (GPL-3.0)**
 |------------------|--------|----|------|
 | Ubuntu 20.04 | gfortran 9.4 | OpenMPI | success |
 | Ubuntu 22.04 | gfortran 11.4 | OpenMPI | success |
-| Linux HPC (UMich ARC-TS) | GCC 8.2 | OpenMPI 3.1.6 | success |
-| Linux HPC (UMich ARC-TS) | Intel 2022 | Intel MPI 2021 | success |
+| Linux HPC (UMICH ARC-TS) | GCC 8.2 | OpenMPI 3.1.6 | success |
+| Linux HPC (UMICH ARC-TS) | Intel 2022 | Intel MPI 2021 | success |
 | Linux (local build) | gfortran | MPICH | success |
 DendriX is compatible with multiple MPI implementations (OpenMPI, Intel MPI, and MPICH) and supports both GNU and Intel compiler toolchains on workstation and HPC systems.
 
@@ -38,7 +38,7 @@ a DendriX simulation.
 
 ### Build
 ```bash
-cd PhaseField/Works/Dendrite_PFcode
+cd PhaseField/work/Dendrite_PFcode
 make
 ```
 
