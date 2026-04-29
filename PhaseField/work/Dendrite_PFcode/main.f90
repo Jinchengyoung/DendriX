@@ -95,114 +95,122 @@ program main
   max_levs                  = 3
   dim                       = 2
   nsteps_0                  = 1000
-  nsteps                    = 1000
-  plot_int                  = 100
-  plot_int_1                = 5000
-  status_int                = 10
+  nsteps                    = 500000
+  plot_int                  = 2000
+  plot_int_1                = 2000
+  status_int                = 100
   n_cell_x                  = 256
   n_cell_y                  = 256
   n_cell_z                  = 256
-  max_grid_size             = 64
+  max_grid_size             = 32
 
   n_calpf                   = 1
 
   amr_buf_width             = 2
   cluster_minwidth          = 16
   cluster_blocking_factor   = 8
-  cluster_min_eff           = 0.7d0
-  regrid_int                = 10
+  cluster_min_eff           = 0.80d0
+  regrid_int                = 20
   compute_mode              = 0
 
   lamda         = 10.d0
-  anis          = 0.15d0
-  anis_0        = -0.02d0
-  Le            = 1.d0
-  kk            = 4.d0
+  anis          = 0.020d0
+  anis_0        = 0.00d0
+  Le            = 1.00d0
+  kk            = 4.0d0
   DM            = 3.1335d0
-  s_k           = 0.15d0
-  Mc00          = 0.15d0   
-  p_a1          = 0.8839d0
-  p_a2          = 0.6267d0
+  s_k           = 0.150d0
+  Mc00          = 1.00d0
+  p_a1          = 0.88390d0
+  p_a2          = 0.62670d0
   thers         = 1.0E-6
-  noi_amp       = 0.d0
-  dx_def        = 0.8d0
-  ori_def       = 0.d0
-  temp_h_l      = 0.7d0
-  temp_h_r      = 0.7d0
-  temp_l        = 0.7d0
-  seed_radius   = 3.d0
+  noi_amp       = 6.0E-2
+  dx_def        = 0.04d0
+  ori_def       = 0.0d0
+  dt01          = 2.0E-7
+  dt08          = 2.0E-6
+  dt_ratio      = 8
+  temp_h_l      = 0.85d0
+  temp_h_r      = 0.85d0
+  temp_l        = 0.85d0
+  seed_radius   = 0.133d0
   seed_num      = 1
   seed_type     = 0
-  r_hyper       = 2.d0
+  r_hyper       = 2.0d0
   no_noise      = 0
   plot_mode     = 0
   coupled_mode  = 0
   cal_tem_mode  = 0
   cooling_mode  = 0
-  para_uc       = 0.5d0
-  para_th       = 0.d0
-  Rate_Cooling  = 0.d0
-  temp_lowcut   = 0.7d0
+  para_uc       = 0.3d0
+  para_th       = 0.1d0
+  amr_thers     = 0.0001d0
+  safe_n_init   = 30
+  Rate_Cooling  = 0.0d0
+  temp_lowcut   = 0.10d0
   reset_plotnum = 0
   write_file_mode = 0
-  N_para_Range    = 0
-  plot_para_num   = 1
-  write_para_file = 0
-  ratio_select    = 0.5
-  regrid_amp_ref  = 1
+  N_para_Range    = 40
+  plot_para_num   = 2
+  write_para_file = 1
+  ratio_select    = 0.5d0
+  regrid_amp_ref  = 2
   regrid_int_max  = 200
   regrid_int_min  = 10
   ada_regriding   = 0
-  thers_gradient  = 0.d0
+  thers_gradient  = 0.05d0
+  temp_seg_num    = 1
   rotation_type   = 0
   period_type     = 1
-  period_p0       = 0.d0
-  period_NT       = 1
+  period_p0       = 0.00d0
+  period_NT       = 1000
+  load_folder_name = 'den00002000'
 
   ! For flow routine
   flw_calculate_mode  = 1
   do_solve_flow       = 0
   solve_flow_only     = 0
-  tau_LBM             = 1.d0
-  flw_amp             = 1.d0
-  thers_solid         = 0.9d0
-  flw_rho             = 0.d0
-  para_u              = 0.d0
-  flw_skip_level_n    = 0
-  gacc                = 0.d0
-  belta_c             = 0.d0
-  multi_add_tau       = 0.0
-  flw_constrain_limit = 0.99d0
   kill_phi_flag       = 0
   kill_body_force     = 1
   kill_lorentz_force  = 1
-  cal_boundary_spec   = 1
-  lorentz_omega       = 0.d0
-  lorentz_amp_x      = 0.0
-  lorentz_amp_y      = 0.0
-  lorentz_amp_z      = 0.0
- 
-  fl_x_lo       = 15 
-  fl_x_hi       = 15 
-  fl_y_lo       = 15 
-  fl_y_hi       = 15 
-  fl_z_lo       = 15 
-  fl_z_hi       = 15 
+  flw_amp             = 10.0d0
+  flw_skip_level_n    = 0
+  gacc                = 2.0667E-3
+  belta_c             = 7.3E-2
+  multi_add_tau       = 0.0d0
+  flw_constrain_limit = 0.99d0
+  lorentz_omega       = 1.0d0
+  lorentz_amp_x       = 7.957E-6
+  lorentz_amp_y       = 0.0d0
+  lorentz_amp_z       = 0.0d0
+  tau_LBM             = 0.6d0
+  thers_solid         = 0.90d0
+  flw_rho             = 1.0d0
+  para_u              = 1.0d0
+  thers_tau           = 3.0d0
+  cal_boundary_spec   = 0
 
-  u_inlet_x_lo  = 1.d0
-  u_inlet_x_hi  = 1.d0
-  u_inlet_y_lo  = 1.d0
-  u_inlet_y_hi  = 1.d0 
-  u_inlet_z_lo  = 1.d0
-  u_inlet_z_hi  = 1.d0
+  fl_x_lo       = 11
+  fl_x_hi       = 12
+  fl_y_lo       = 15
+  fl_y_hi       = 15
+  fl_z_lo       = 15
+  fl_z_hi       = 15
+
+  u_inlet_x_lo  = 0.1d0
+  u_inlet_x_hi  = 1.0d0
+  u_inlet_y_lo  = 1.0d0
+  u_inlet_y_hi  = 1.0d0
+  u_inlet_z_lo  = 1.0d0
+  u_inlet_z_hi  = 1.0d0
 
   ! allowable options for this example are
-  bc_x_lo       = -1 
-  bc_x_hi       = -1
-  bc_y_lo       = -1 
-  bc_y_hi       = -1 
-  bc_z_lo       = -1 
-  bc_z_hi       = -1 
+  bc_x_lo       = 12
+  bc_x_hi       = 12
+  bc_y_lo       = 12
+  bc_y_hi       = 12
+  bc_z_lo       = -1
+  bc_z_hi       = -1
 
   ! read inputs file and overwrite any default values
   narg = command_argument_count()
@@ -217,13 +225,16 @@ program main
         open(unit=un, file = inputs_file_name, status = 'old', action = 'read')
         read(unit=un, nml = probin)
         close(unit=un)
-        !need_inputs_file = .false.
+        need_inputs_file = .false. !JC revision
      end if
+  end if
 
-     ! allocate the seed information based on the seed_num read from the input file
-     ! the vector has dim + 1 dimensions, x, y, z and ori
-     if(seed_num .ge. 1) allocate( seed_pos(seed_num,7) )
+  ! allocate the seed information based on the seed_num (always done, even without inputs file) !JC revision
+  ! the vector has dim + 1 dimensions, x, y, z and ori
+  if(seed_num .ge. 1) allocate( seed_pos(seed_num,7) )
 
+  ! read optional seed position file if provided !JC revision
+  if ( narg >= farg ) then
      call get_command_argument(farg, value = inputs_file_name)
      inquire(file = inputs_file_name, exist = found_inputs_file )
      if (found_inputs_file) then
@@ -241,7 +252,6 @@ program main
         close(unit=un)
         need_inputs_file = .false.
      end if
-
   end if
 
   ! now that we have dim, we can allocate these
