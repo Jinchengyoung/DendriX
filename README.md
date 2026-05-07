@@ -56,12 +56,12 @@ make OMP=t
 
 Serial (2D example):
 ```bash
-./main.Linux.gfortran.exe Inputs_2d
+./main.Linux.gfortran.exe inputs_2d
 ```
 
 Parallel (3D example):
 ```bash
-mpirun -n 4 ./main.Linux.gfortran.mpi.exe Inputs_3d
+mpirun -n 4 ./main.Linux.gfortran.mpi.exe inputs_3d
 ```
 
 ### Visualize
